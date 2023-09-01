@@ -1,0 +1,280 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #ccc;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/painellavanda4m2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    background: white;
+    color:#ccccff;
+    border-radius: 10px;
+}
+
+/** header**/
+#cabecalho{
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to right, #acacff, rgb(0, 184, 61));
+    padding: 10px;
+}
+
+#navbar, a {
+    padding: 10px 20px;
+    color: white;
+}
+
+.nome{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive;
+    color: white;
+    margin-top:10px ;
+}
+/** fim header**/
+
+/**SLIDE**/
+.slider{
+    width: 100%;
+    margin: auto;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.slides{
+    width: 400%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 600px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.navigation-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position:absolute;
+    width: 100%;
+    margin-top: 560px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+/**fim slide**/
+
+/** container**/
+#container{
+    width: 1080px;
+    margin: 30px auto;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    
+}
+
+.titulo1{
+    border-bottom: 2px solid  #acacff;
+}
+
+.titulo1, h1{
+    text-align: center;
+    margin-top: 40px;
+    color:#acacff;
+}
+
+/**cards**/
+#servicos{
+    width: 1000px;
+    margin-top: 20px;
+}
+.servicos1{
+    text-align: center;
+}
+
+
+.produto1, .produto2, .produto3{
+    width: 300px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px 10px;
+    background-color: #acacff;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.produto1 h2, .produto2 h2, .produto3 h2{
+    margin-top: 10px;
+}
+
+.produto1:hover, .produto2:hover, .produto3:hover{
+    transform: scale(1.1);
+}
+
+.produto1 img, .produto2 img, .produto3 img{
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.produto-btn{
+    margin-bottom: 10px;
+}
+
+.produto-btn a:hover{
+    background: none;
+    color:none;
+}
+/**fim cards **/
+
+/**sobre nos**/
+#sobrenos{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(127, 255, 212, 0.253);
+    border-radius: 10px ;
+    margin-top: 100px;
+    padding: 20px;
+    
+}
+
+/** encomenda **/
+#encomenda{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    color:#acacff;
+}
+
+.texto-encomenda, .redesocial{
+    display: inline-block;
+    border-right: 1px #acacff solid;
+    padding: 20px;
+}
+
+.redesocial{
+    border: none;
+}
+.wpp{
+    display: inline;
+}
+.wpp a{
+    background: none;
+    color:black;
+}
+.wpp a:hover{
+    background: none;
+    color:black;
+}
+
+.wpp img{
+    width: 20px;
+    z-index: 1000;
+    margin: auto;
+}
+
+.insta img{
+    width: 30px;
+}
+
+/*Mapa*/
+#mapagoogle{
+    margin-top: 100px;
+}
+
+#mapagoogle h1{
+    border-bottom: 1px solid #acacff;
+    
+}
+.mapa iframe{
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/*footer*/
+footer{
+    
+    box-shadow: 6px 4px 6px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
